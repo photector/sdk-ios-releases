@@ -22,8 +22,7 @@ target 'PhotectorTest' do
         pod 'Photector', '0.9.0'
 end
 ```
-
-Please note the minimum supported iOS version is 11.0.
+*__PLEASE NOTE:__ the minimum supported iOS version is 11.0.*
 
 3. Install the pods: 
 ```
