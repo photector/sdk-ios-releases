@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PhotectorDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/PhotectorDelegate" class="dashAnchor"></a>
+    <a title="PhotectorDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Photector Docs</a> (46% documented)</p>
+        <p class="header-right"><a href="https://github.com/tcompanies-tech/sdk-ios"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Photector Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PhotectorDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EventInfo.html">EventInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Photector.html">Photector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@Photector@objc(cs)UserDataDTO">UserDataDTO</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/PhotectorDelegate.html">PhotectorDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9Photector5Eventa">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9Photector6Recorda">Record</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PhotectorDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objc(PhotectorDelegate)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PhotectorDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>PhotectorDelegate</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Photector@objc(pl)PhotectorDelegate(im)didStartUploadWithEventId:"></a>
+                    <a name="//apple_ref/swift/Method/didStartUpload(eventId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Photector@objc(pl)PhotectorDelegate(im)didStartUploadWithEventId:">didStartUpload(eventId:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when an event upload has started</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didStartUpload</span><span class="p">(</span><span class="nv">eventId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>eventId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The event id</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Photector@objc(pl)PhotectorDelegate(im)didChangeUploadProgressWithEventId:progress:"></a>
+                    <a name="//apple_ref/swift/Method/didChangeUploadProgress(eventId:progress:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Photector@objc(pl)PhotectorDelegate(im)didChangeUploadProgressWithEventId:progress:">didChangeUploadProgress(eventId:progress:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when upload progress has changed for an event</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didChangeUploadProgress</span><span class="p">(</span><span class="nv">eventId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">progress</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>eventId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The event id for which upload progress was changed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progress</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A value in range 0.0 and 1.0</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Photector@objc(pl)PhotectorDelegate(im)didFinishUploadWithEventId:"></a>
+                    <a name="//apple_ref/swift/Method/didFinishUpload(eventId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Photector@objc(pl)PhotectorDelegate(im)didFinishUploadWithEventId:">didFinishUpload(eventId:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when an event upload</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didFinishUpload</span><span class="p">(</span><span class="nv">eventId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>eventId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The event id</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://photector.com" target="_blank" rel="external">PEIR</a>. All rights reserved. (Last updated: 2019-04-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,187 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/DTO/EventsDTO.swift",
+      "line": 99,
+      "symbol": "EventsDTO",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/DTO/UserDataDTO.swift",
+      "line": 69,
+      "symbol": "UserDataDTO.UserDTO",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Extensions/UIFontExtensions.swift",
+      "line": 11,
+      "symbol": "UIFont.loadFontWith(name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Extensions/UIFontExtensions.swift",
+      "line": 24,
+      "symbol": "UIFont.loadFonts",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Extensions/UIImageExtensions.swift",
+      "line": 11,
+      "symbol": "UIImage.generateRandomImage(size:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Extensions/UIImageExtensions.swift",
+      "line": 27,
+      "symbol": "UIImage.from(color:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
+      "line": 12,
+      "symbol": "PhotectorError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
+      "line": 22,
+      "symbol": "PhotectorDelegate.didCreateEvent(eventId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
+      "line": 52,
+      "symbol": "Photector.didRequestEventUploadNotification",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
+      "line": 53,
+      "symbol": "Photector.didDiscardEventNotification",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
+      "line": 55,
+      "symbol": "Photector.eventIdUserInfoKey",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
+      "line": 56,
+      "symbol": "Photector.zipPathUserInfoKey",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
+      "line": 57,
+      "symbol": "Photector.hashPathUserInfoKey",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
+      "line": 66,
+      "symbol": "Photector.EventUploadManager",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
+      "line": 116,
+      "symbol": "Photector.eventUploadManager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Repository/Repository.swift",
+      "line": 14,
+      "symbol": "RepositoryError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Service/HTTPClient.swift",
+      "line": 10,
+      "symbol": "HTTPClientError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Utilities/SimpleLocationManager.swift",
+      "line": 146,
+      "symbol": "SimpleLocationManager.locationManager(_:didUpdateLocations:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Utilities/SimpleLocationManager.swift",
+      "line": 155,
+      "symbol": "SimpleLocationManager.locationManager(_:didFailWithError:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Utilities/SimpleLocationManager.swift",
+      "line": 163,
+      "symbol": "SimpleLocationManager.locationManager(_:didChangeAuthorization:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/ViewControllers/TakePhotoViewController.swift",
+      "line": 202,
+      "symbol": "TakePhotoViewController.photoOutput(_:didFinishProcessingPhoto:error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Views/CalloutButton.swift",
+      "line": 11,
+      "symbol": "CalloutButton",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Views/DefaultButton.swift",
+      "line": 11,
+      "symbol": "DefaultButton",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Views/PlaceholderTextView.swift",
+      "line": 17,
+      "symbol": "PlaceholderTextView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Views/RequestLocationView.swift",
+      "line": 16,
+      "symbol": "RequestLocationView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Views/ToggleButton.swift",
+      "line": 11,
+      "symbol": "ToggleButton",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/wolf/Development/PEIRSDKIOS"
+}
