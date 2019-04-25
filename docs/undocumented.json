@@ -51,56 +51,42 @@
     },
     {
       "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
-      "line": 22,
-      "symbol": "PhotectorDelegate.didCreateEvent(eventId:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
-      "line": 52,
+      "line": 58,
       "symbol": "Photector.didRequestEventUploadNotification",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
-      "line": 53,
-      "symbol": "Photector.didDiscardEventNotification",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
-      "line": 55,
+      "line": 61,
       "symbol": "Photector.eventIdUserInfoKey",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
-      "line": 56,
+      "line": 64,
       "symbol": "Photector.zipPathUserInfoKey",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
-      "line": 57,
+      "line": 67,
       "symbol": "Photector.hashPathUserInfoKey",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
-      "line": 66,
+      "line": 77,
       "symbol": "Photector.EventUploadManager",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
-      "line": 116,
+      "line": 127,
       "symbol": "Photector.eventUploadManager",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
