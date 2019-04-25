@@ -105,9 +105,19 @@
 <p>The SDK supports at the very minimum iOS 11. In order to create events both location services and access to the camera is required. An access token is also required and can be obtained through <a href="https://photector.com">Photector</a>.</p>
 <h2 id='installation' class='heading'>Installation</h2>
 
-<p>The Photector iOS SDK is available through <a href="https://cocoapods.org">CocoaPods</a>. To install
-the SDK, simply add the following line to your Podfile:</p>
-<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'Photector'</span>
+<p>The Photector iOS SDK is available through <a href="https://cocoapods.org">CocoaPods</a>. The Photector SDK is not available through the public cocoapods repository. Instead one has to add the Photector private repo as such:</p>
+<pre class="highlight shell"><code><span class="nv">$ </span>pod repo add Photector https://github.com/photector/Podspecs.git
+</code></pre>
+
+<p>To install the SDK, simply add the following lines add the top of your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">source</span> <span class="s1">'https://github.com/photector/Podspecs.git'</span>
+</code></pre>
+
+<p>Then add the Photector pod to your desired target, e.g.:</p>
+<pre class="highlight ruby"><code><span class="n">target</span> <span class="s1">'MyApp'</span> <span class="k">do</span>
+    <span class="n">pod</span> <span class="s1">'Photector'</span>
+<span class="k">end</span>
+
 </code></pre>
 <h2 id='implementation-guide' class='heading'>Implementation Guide</h2>
 <h3 id='update-info-plist' class='heading'>Update info.plist</h3>
@@ -116,41 +126,41 @@ the SDK, simply add the following line to your Podfile:</p>
 <h3 id='initialize-photector' class='heading'>Initialize Photector</h3>
 
 <p>In order to implement the SDK, first initialize the SDK as early as possible in your apps&rsquo; lifecycle. We recommend initializing Photector in your app delegate after the app has launched:</p>
-<pre class="highlight plaintext"><code>func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -&gt; Bool {
-    // Override point for customization after application launch.
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didFinishLaunchingWithOptions</span> <span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIApplicationLaunchOptionsKey</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="p">{</span>
+    <span class="c1">// Override point for customization after application launch.</span>
 
-    ...
+    <span class="o">...</span>
 
-    do {
-        let clientId = // your client id as provided by Photector
-        let clientSecret = // your client secret as provided by Photector
-        let accessToken = // your access token as provided by Photector
-        try Photector.shared.configure(clientId: clientId, clientSecret: clientSecret, accessToken: accessToken)
-    } catch let error {
-        print("error: \(error)")
-    }
+    <span class="k">do</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">clientId</span> <span class="o">=</span> <span class="c1">// your client id as provided by Photector</span>
+        <span class="k">let</span> <span class="nv">clientSecret</span> <span class="o">=</span> <span class="c1">// your client secret as provided by Photector</span>
+        <span class="k">let</span> <span class="nv">accessToken</span> <span class="o">=</span> <span class="c1">// your access token as provided by Photector</span>
+        <span class="k">try</span> <span class="kt">Photector</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">configure</span><span class="p">(</span><span class="nv">clientId</span><span class="p">:</span> <span class="n">clientId</span><span class="p">,</span> <span class="nv">clientSecret</span><span class="p">:</span> <span class="n">clientSecret</span><span class="p">,</span> <span class="nv">accessToken</span><span class="p">:</span> <span class="n">accessToken</span><span class="p">)</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="k">let</span> <span class="nv">error</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"error: </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+    <span class="p">}</span>
 
-    return true
-}
+    <span class="k">return</span> <span class="kc">true</span>
+<span class="p">}</span>
 </code></pre>
 <h3 id='create-an-event' class='heading'>Create An Event</h3>
 
 <p>In order to create an event, just call the <code>createEvent()</code> method:</p>
-<pre class="highlight plaintext"><code>let description: String? = null // Optionally add a description
-let tags: [String] = [] // Optionally add a list of tags
-do {
-    try Photector.shared.createEvent(description: description, tags: tags)
-} catch let error {
-    print("error: \(error)")
-}
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="n">null</span> <span class="c1">// Optionally add a description</span>
+<span class="k">let</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1">// Optionally add a list of tags</span>
+<span class="k">do</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="kt">Photector</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">createEvent</span><span class="p">(</span><span class="nv">description</span><span class="p">:</span> <span class="n">description</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="n">tags</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="k">let</span> <span class="nv">error</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"error: </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre>
 <h3 id='list-events' class='heading'>List Events</h3>
 
 <p>In order to retrieve a list of previously stored events, call the <code>getEvents()</code> method:</p>
-<pre class="highlight plaintext"><code>let force = false // If force is true, cached event data will be ignored
-Photector.shared.getEvents(force: force, completionHandler: { (events, error) in
-    // Do something with the events on success or display the error on failure
-})
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">force</span> <span class="o">=</span> <span class="kc">false</span> <span class="c1">// If force is true, cached event data will be ignored</span>
+<span class="kt">Photector</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">getEvents</span><span class="p">(</span><span class="nv">force</span><span class="p">:</span> <span class="n">force</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">events</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+    <span class="c1">// Do something with the events on success or display the error on failure</span>
+<span class="p">})</span>
 </code></pre>
 <h3 id='handle-sdk-notifications' class='heading'>Handle SDK Notifications</h3>
 
@@ -164,11 +174,11 @@ Photector.shared.getEvents(force: force, completionHandler: { (events, error) in
 </ul>
 
 <p>Implement the <code><a href="Protocols/PhotectorDelegate.html">PhotectorDelegate</a></code> interface to handle the above notifications. Subscribe to receive notifications and unsubscribe when you are no longer interested in receiving those notifications:</p>
-<pre class="highlight plaintext"><code>// To subscribe ...
-Photector.shared.addListener(this);
+<pre class="highlight swift"><code><span class="c1">// To subscribe ...</span>
+<span class="kt">Photector</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">addListener</span><span class="p">(</span><span class="n">this</span><span class="p">);</span>
 
-// To unsubscribe ...
-Photector.shared.removeListener(this);
+<span class="c1">// To unsubscribe ...</span>
+<span class="kt">Photector</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">removeListener</span><span class="p">(</span><span class="n">this</span><span class="p">);</span>
 </code></pre>
 
           </div>
