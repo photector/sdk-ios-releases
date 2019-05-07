@@ -86,6 +86,13 @@
     },
     {
       "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
+      "line": 109,
+      "symbol": "Photector.deinit",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Photector.swift",
       "line": 127,
       "symbol": "Photector.eventUploadManager",
       "symbol_kind": "source.lang.swift.decl.var.instance",
@@ -107,21 +114,21 @@
     },
     {
       "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Utilities/SimpleLocationManager.swift",
-      "line": 146,
+      "line": 148,
       "symbol": "SimpleLocationManager.locationManager(_:didUpdateLocations:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Utilities/SimpleLocationManager.swift",
-      "line": 155,
+      "line": 157,
       "symbol": "SimpleLocationManager.locationManager(_:didFailWithError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wolf/Development/PEIRSDKIOS/Photector/Classes/Utilities/SimpleLocationManager.swift",
-      "line": 163,
+      "line": 165,
       "symbol": "SimpleLocationManager.locationManager(_:didChangeAuthorization:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
